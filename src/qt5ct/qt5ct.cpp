@@ -29,6 +29,7 @@
 #include <QDir>
 #include <QLocale>
 #include "qt5ct.h"
+#include <QCoreApplication>
 
 #ifndef QT5CT_DATADIR
 #define QT5CT_DATADIR "/usr/share"
@@ -37,7 +38,8 @@
 
 QString Qt5CT::configPath()
 {
-    return QDir::homePath() + "/.config/qt5ct/";
+    QString app_path = QCoreApplication::applicationDirPath();
+    return app_path + "/.config/qt5ct/";
 }
 
 QString Qt5CT::configFile()

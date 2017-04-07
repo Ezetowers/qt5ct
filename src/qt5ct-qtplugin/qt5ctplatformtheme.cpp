@@ -66,7 +66,7 @@ Qt5CTPlatformTheme::Qt5CTPlatformTheme()
 #endif
         QGuiApplication::setFont(m_generalFont);
     }
-    qCDebug(lqt5ct) << "using qt5ct plugin";
+    // qCDebug(lqt5ct) << "using qt5ct plugin";
 #ifdef QT_WIDGETS_LIB
     if(!QStyleFactory::keys().contains("qt5ct-style"))
         qCCritical(lqt5ct) << "unable to find qt5ct proxy style";

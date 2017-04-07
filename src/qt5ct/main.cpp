@@ -48,8 +48,8 @@ int main(int argc, char **argv)
     qt_translator.load(QLibraryInfo::location (QLibraryInfo::TranslationsPath) + "/qtbase_" + locale);
     app.installTranslator(&qt_translator);
 
-    qDebug("Configuration path: %s", qPrintable(Qt5CT::configPath()));
-    qDebug("Shared QSS path: %s", qPrintable(Qt5CT::sharedStyleSheetPath()));
+    // qDebug("Configuration path: %s", qPrintable(Qt5CT::configPath()));
+    // qDebug("Shared QSS path: %s", qPrintable(Qt5CT::sharedStyleSheetPath()));
 
     //checking environment
     QStringList errorMessages;
